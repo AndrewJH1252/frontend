@@ -5,7 +5,7 @@ import {  addCourse, removeCourse,setFilteredResults,setAvailableCourses } from 
 
  // Import the necessary actions from your coursesSlice
 
-const API_BASE_URL = 'http://localhost:5000'; // Replace with your API base URL
+const API_BASE_URL = 'https://tutorium-api.onrender.com'; // Replace with your API base URL
 
 // Async Thunk for fetching available courses
 export const fetchAvailableCourses = createAsyncThunk(

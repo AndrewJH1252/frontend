@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000'; // Replace with your API base URL
+const API_BASE_URL = 'https://tutorium-api.onrender.com'; // Replace with your API base URL
 
 export const fetchCategories = createAsyncThunk(
   'categories/fetchCategories',

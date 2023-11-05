@@ -3,7 +3,7 @@ import axios from 'axios';
 import { addRequest, updateRequest, deleteRequest, clearAllRequests, setRequests } from '../slice/requestsSlice';
 import {clearNotifications } from '../slice/notificationSlice';
 
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'https://tutorium-api.onrender.com';
 
 export const submitRequest = createAsyncThunk(
   'requests/submitRequest',

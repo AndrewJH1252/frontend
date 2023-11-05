@@ -4,7 +4,7 @@ import { setReplies, addLikedPost, removeLikedPost} from '../slice/postSlice';
 
 
 const WEBSOCKET_SERVER_URL = 'ws://localhost:5000'; // Replace with your WebSocket server URL
-const API_BASE_URL = 'http://localhost:5000'; // Replace with your API base URL
+const API_BASE_URL = 'https://tutorium-api.onrender.com'; // Replace with your API base URL
 
 // Thunk for creating a new post
 

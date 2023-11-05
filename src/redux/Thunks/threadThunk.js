@@ -3,7 +3,7 @@ import axios from 'axios';
 import { updateThreads } from '../slice/threadSlice'; // Import the action to update threads
 
 
-const API_BASE_URL = 'http://localhost:5000'; // Replace with your API base URL
+const API_BASE_URL = 'https://tutorium-api.onrender.com'; // Replace with your API base URL
 
 // Thunk for creating a new thread
 export const createThread = createAsyncThunk('threads/createThread', async (newThreadData, { rejectWithValue, getState, dispatch }) => {

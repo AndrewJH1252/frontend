@@ -4,7 +4,7 @@ import notificationsSlice, { markNotificationAsRead } from '../slice/notificatio
 import { setNotifications } from '../slice/notificationSlice'; // Correctly import the setNotifications action
 
 
-const API_BASE_URL = 'http://localhost:5000'; // Update this to your API URL
+const API_BASE_URL = 'https://tutorium-api.onrender.com'; // Update this to your API URL
 
 // Simulated unique ID generator
 let notificationIdCounter = 0;

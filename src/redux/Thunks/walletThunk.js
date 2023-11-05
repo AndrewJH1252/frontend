@@ -8,9 +8,9 @@ import { elements, CardElement } from '@stripe/react-stripe-js'; // Import eleme
 // Your thunk logic here...
 
 
-const API_BASE_URL = 'http://localhost:5000'; // Update this to your API URL
+const API_BASE_URL = 'https://tutorium-api.onrender.com'; // Update this to your API URL
 
-const createPaymentIntentEndpoint = 'http://localhost:5000';
+const createPaymentIntentEndpoint = 'https://tutorium-api.onrender.com';
 
 
 

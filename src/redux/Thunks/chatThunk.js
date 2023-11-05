@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:5000'; // Replace with your actual backend URL
+const API_BASE_URL = 'https://tutorium-api.onrender.com'; // Replace with your actual backend URL
 
 export const sendChatMessage = createAsyncThunk(
   'chat/sendMessage',

@@ -3,7 +3,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import axios from 'axios'; // Import Axios
 
-const API_BASE_URL = 'http://localhost:5000'; // Replace with your API base URL
+const API_BASE_URL = 'https://tutorium-api.onrender.com'; // Replace with your API base URL
 
 // Define an initial state for statistics
 const initialState = {

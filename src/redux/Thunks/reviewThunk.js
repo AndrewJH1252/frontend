@@ -3,7 +3,7 @@ import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import { setReviews, setCourseReviews } from '../slice/reviewSlice'; // Correctly import the setNotifications action
 
-const API_BASE_URL = 'http://localhost:5000'; // Replace with your API base URL
+const API_BASE_URL = 'https://tutorium-api.onrender.com'; // Replace with your API base URL
 
 export const submitReview = createAsyncThunk(
   'reviews/submitReview',
