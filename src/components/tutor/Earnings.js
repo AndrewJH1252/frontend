@@ -52,7 +52,7 @@ const Earnings = () => {
   return (
     <div className="bg-gray-100 min-h-screen rounded shadow p-4">
   <header className="m-5">
-    <a href="/tutor-dashboard" className="flex items-center hover:opacity-80 transition-opacity">
+    <a href="https://tutorium.onrender.com/tutor-dashboard" className="flex items-center hover:opacity-80 transition-opacity">
       <img src={Logo} alt="My Logo" className="w-28 sm:w-30 h-12 mr-4 sm:mr-8 mb-3" />
     </a>
   </header>

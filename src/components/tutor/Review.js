@@ -51,7 +51,7 @@ const Review = () => {
   return (
     <div className="bg-gradient-to-r from-purple-900 via-blue-900 to-purple-900 min-h-screen p-4">
     <header className="m-6">
-      <a href="/tutor-dashboard" className="flex items-center hover:opacity-80 transition-opacity">
+      <a href="https://tutorium.onrender.com/tutor-dashboard" className="flex items-center hover:opacity-80 transition-opacity">
         <img src={Logo} alt="My Logo" className="w-28 sm:w-30 h-12 mr-4 sm:mr-8 mb-3" />
       </a>
     </header>

@@ -26,7 +26,7 @@ const Header = () => {
     <header className="bg-gray-800 py-6 px-8 flex flex-col lg:flex-row items-center justify-between">
       {/* Logo and Category Menu */}
       <div className="flex items-center space-x-4 lg:space-x-6 mb-4 lg:mb-0">
-      <a href="/Main" className="flex items-center hover:opacity-80 transition-opacity">
+      <a href="https://tutorium.onrender.com/Main" className="flex items-center hover:opacity-80 transition-opacity">
     <img src={Logo} alt="My Logo" className="w-30 h-12 mr-8 mb-3" />
  
   </a>

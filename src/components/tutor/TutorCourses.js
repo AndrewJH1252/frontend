@@ -55,7 +55,7 @@ const MyCourses = () => {
   return (
     <div className="bg-gradient-to-br from-blue-900 to-indigo-900 min-h-screen p-4 flex flex-col sm:p-8">
   <header className="mb-5">
-    <a href="/tutor-dashboard" className="flex items-center hover:opacity-80 transition-opacity">
+    <a href="https://tutorium.onrender.com/tutor-dashboard" className="flex items-center hover:opacity-80 transition-opacity">
       <img src={Logo} alt="My Logo" className="w-28 sm:w-30 h-12 mr-4 sm:mr-8 mb-3" />
     </a>
   </header>

@@ -56,7 +56,7 @@ const PaymentHistory = () => {
 
   return (
     <div className="bg-gradient-to-br from-indigo-900 to-purple-900 min-h-screen py-10">
-      <a href="/Main" className="ml-6 flex items-center hover:opacity-80 transition-opacity">
+      <a href="https://tutorium.onrender.com/Main" className="ml-6 flex items-center hover:opacity-80 transition-opacity">
     <img src={Logo} alt="My Logo" className="w-30 h-12 mr-8 mb-8" />
  
   </a>
