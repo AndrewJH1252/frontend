@@ -2,8 +2,8 @@ import React from 'react';
 import mukelo from '../../images/mukelo.png';
 import andrew from '../../images/andrew.jpg';
 import sanele from '../../images/sanele.jpg';
-import pio from '../../images/profile.png';
-import yesira from '../../images/profile.png';
+import pio from '../../images/pio.jpg';
+import yesira from '../../images/yesira.jpg';
 import { FiLinkedin, FiTwitter } from 'react-icons/fi';
 
 const Team = () => {
