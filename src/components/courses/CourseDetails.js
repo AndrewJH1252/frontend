@@ -199,36 +199,44 @@ const CourseDetails = ({ course, handleAddToCart }) => {
     </div>
   </div>
 
-  <div className="flex flex-col items-center md:flex-row md:justify-between">
-    <div className="flex mb-4 md:mb-0 md:flex-grow md:mr-4  space-x-5">
-      <div className="flex items-center mb-2">
-        <span className="text-gray-300 mr-2">
+  <div className="flex flex-col items-center mb-4 space-y-4 md:flex-row md:justify-between md:mr-4 md:mb-0">
+  <div className="flex md:flex-grow md:space-x-3 space-x-2">
+    {course.price && (
+      <div className="flex items-center">
+        <span className="text-gray-300 mr-2 hidden md:inline-block">
           <FaDollarSign className="text-lg text-green-900" />
         </span>
         <span className="text-lg text-green-900">{course.price.toFixed(2)}</span>
       </div>
+    )}
 
-      <div className="flex items-center mb-2">
-        <span className="text-gray-300 mr-2">
+    {course.duration && (
+      <div className="flex items-center">
+        <span className="text-gray-300 mr-2 hidden md:inline-block">
           <FaClock className="text-lg text-blue-900" />
         </span>
         <span className="text-lg text-blue-900">{course.duration} hours</span>
       </div>
+    )}
 
-      <div className="flex items-center mb-2">
-        <FiLayers className={`${levelColor} text-lg mr-2`} />
+    {course.level && (
+      <div className="flex items-center">
+        <FiLayers className={`${levelColor} text-lg mr-2 hidden md:inline-block`} />
         <span className={`text-lg ${levelColor}`}>{course.level}</span>
       </div>
+    )}
 
-      <div className="flex items-center mb-2">
-        <span className="text-gray-300 mr-2">
+    {course.enrollmentCount && (
+      <div className="flex items-center">
+        <span className="text-gray-300 mr-2 hidden md:inline-block">
           <FaUsersCog className="text-lg text-purple-900" />
         </span>
         <span className="text-lg text-purple-900">{course.enrollmentCount} enrolled</span>
       </div>
-    </div>
+    )}
+  </div>
 
-   
+
   </div>
 </div>
 
