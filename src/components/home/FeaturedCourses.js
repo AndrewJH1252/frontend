@@ -75,11 +75,11 @@ const FeaturedCourses = () => {
   
 
   return (
-    <div className="bg-white py-10">
-      <div className="container mx-auto px-4">
+    <div className="bg-white py-16">
+      <div className="container mx-auto">
         {/* New Courses Section */}
         <div className="space-y-8 mb-4">
-          <div className="mb-6 text-2xl font-semibold text-gray-800 px-7">
+          <div className="mb-6 text-2xl font-semibold text-gray-800 px-4">
             New Courses
           </div>
         
@@ -112,7 +112,7 @@ const FeaturedCourses = () => {
 
         {/* Popular Courses Section */}
         <div className="space-y-8 mb-4">
-          <div className="mb-6 text-2xl font-semibold text-gray-800 px-7">
+          <div className="mb-6 text-2xl font-semibold text-gray-800 px-4">
             Popular Courses
           </div>
         
@@ -144,7 +144,7 @@ const FeaturedCourses = () => {
 
         {/* Featured Courses Section */}
         <div className="space-y-8 mb-4">
-          <div className="mb-6 text-2xl font-semibold text-gray-800 px-7">
+          <div className="mb-6 text-2xl font-semibold text-gray-800 px-4">
             Featured Courses
           </div>
         

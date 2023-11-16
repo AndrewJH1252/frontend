@@ -39,7 +39,7 @@ const ForgotPassword = (props) => {
     }}
   >
     <div
-      className="bg-gradient-to-b from-gray-800 via-gray-900 to-black bg-opacity-70 p-6 sm:px-8 md:px-10 rounded-md w-full max-w-md relative z-50"
+      className="bg-gradient-to-b from-gray-800 via-gray-900 to-black bg-opacity-70 p-6 sm:px-8 md:px-10 rounded-md w-full max-w-sm relative z-50"
       style={{
         background: 'linear-gradient(to bottom, rgba(211, 231, 245, 0.5), rgba(130, 195, 218, 0.5))',
         backgroundImage: `url(${backgroundImage})`,
@@ -70,26 +70,24 @@ const ForgotPassword = (props) => {
           >
             {loading ? 'Sending...' : 'Send Reset Link'}
           </button>
-      
-            <p className="text-neutral-500 mt-12">
+          <p className="text-neutral-500 mt-12">
             {props.showLoginLink && (
-                <>
-                  Remember your account?{' '}
-                  <span className="text-blue-800 ml-2 hover:underline cursor-pointer" onClick={props.toggleLoginPopUp}>
-                    Login
-                  </span>
-                </>
-              )}
-            </p>
-
+              <>
+                Remember your account?{' '}
+                <span className="text-blue-800 ml-2 hover:underline cursor-pointer" onClick={props.toggleLoginPopUp}>
+                  Login
+                </span>
+              </>
+            )}
+          </p>
         </form>
       )}
     </div>
   </div>
+  
 
 
   );
 };
 
 export default ForgotPassword;
-

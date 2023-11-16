@@ -107,30 +107,27 @@ const handleSubmit = async (e) => {
 const backgroundImage = 'https://img.freepik.com/free-photo/ai-generated-water-picture_23-2150644468.jpg?t=st=1698152172~exp=1698155772~hmac=df630d448efedab0b8a2ceadc0bb390bf4597950099f4802eea70a43ede479a7&w=1380';
 
 return (
+  <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
   <div
-  className="fixed inset-0 flex items-center justify-center z-50"
-  style={{
-    background: 'rgba(0, 0, 0, 0.5)', // Add a semi-transparent background overlay
-  }}
->
-  <div
-    className="bg-gradient-to-b from-gray-800 via-gray-900 to-black bg-opacity-70 p-6 sm:px-8 md:px-10 rounded-md w-full max-w-md relative z-50"
+    className="bg-gradient-to-b from-gray-800 via-gray-900 to-black p-6 sm:p-12 md:p-6 lg:p-8 rounded-md w-full max-w-sm relative z-50"
     style={{
       background: 'linear-gradient(to bottom, rgba(211, 231, 245, 0.5), rgba(130, 195, 218, 0.5))',
       backgroundImage: `url(${backgroundImage})`,
     }}
     onClick={handleClickInside}
   >
-    <h2 className="text-gray-600 text-3xl sm:text-4xl mb-4 sm:mb-8 font-semibold">Register</h2>
-    {showSuccessMessage && <p className="text-green-500 mb-4">Registration successful. You will be redirected to the login page shortly.</p>}
-    {error && <p className="text-red-500 mb-4">{error}</p>}
-    <form onSubmit={handleSubmit}>
+    <h2 className="text-gray-600 text-lg sm:text-2xl mb-2 sm:mb-4 font-semibold">Register</h2>
+    {showSuccessMessage && (
+      <p className="text-green-500 mb-3">Registration successful. Redirecting...</p>
+    )}
+    {error && <p className="text-red-500 mb-2 sm:mb-3">{error}</p>}
+    <form onSubmit={handleSubmit} className="space-y-2 sm:space-y-6">
       <input
         type="text"
         value={firstName}
         onChange={handleFirstNameChange}
         required
-        className="w-full px-4 py-2 mb-4 rounded border border-gray-400 focus:outline-none focus:border-blue-500 transition duration-300"
+        className="w-full px-2 sm:px-3 sm:py-2 rounded border border-gray-400 focus:outline-none focus:border-blue-500 transition duration-300"
         placeholder="First Name"
       />
       <input
@@ -138,7 +135,7 @@ return (
         value={lastName}
         onChange={handleLastNameChange}
         required
-        className="w-full px-4 py-2 mb-4 rounded border border-gray-400 focus:outline-none focus-border-blue-500 transition duration-300"
+        className="w-full px-2 sm:px-3 sm:py-2 rounded border border-gray-400 focus:outline-none focus-border-blue-500 transition duration-300"
         placeholder="Last Name"
       />
       <input
@@ -146,7 +143,7 @@ return (
         value={email}
         onChange={handleEmailChange}
         required
-        className="w-full px-4 py-2 mb-4 rounded border border-gray-400 focus:outline-none focus-border-blue-500 transition duration-300"
+        className="w-full px-2 sm:px-3 sm:py-2 rounded border border-gray-400 focus:outline-none focus-border-blue-500 transition duration-300"
         placeholder="Email"
       />
       <div className="relative">
@@ -156,15 +153,15 @@ return (
           value={password}
           onChange={handlePasswordChange}
           required
-          className="w-full px-4 py-2 mb-4 rounded border border-gray-400 focus:outline-none focus-border-blue-500 transition duration-300"
+          className="w-full px-2 sm:px-3 sm:py-2 rounded border border-gray-400 focus:outline-none focus-border-blue-500 transition duration-300"
         />
-       <button
-                type="button"
-                onClick={handleTogglePasswordVisibility}
-                className="absolute top-0 right-0 m-2 text-gray-500 focus:outline-none"
-              >
-                {showPassword ? 'Hide' : 'Show'}
-              </button>
+        <button
+          type="button"
+          onClick={handleTogglePasswordVisibility}
+          className="absolute top-0 right-0 m-1 sm:m-2 text-gray-500 focus:outline-none text-xs sm:text-base"
+        >
+          {showPassword ? 'Hide' : 'Show'}
+        </button>
       </div>
       <div className="relative">
         <input
@@ -173,38 +170,39 @@ return (
           value={confirmPassword}
           onChange={handleConfirmPasswordChange}
           required
-          className="w-full px-4 py-2 mb-4 rounded border border-gray-400 focus:outline-none focus-border-blue-500 transition duration-300"
+          className="w-full px-2 sm:px-3 sm:py-2 rounded border border-gray-400 focus:outline-none focus-border-blue-500 transition duration-300"
         />
-         <button
-                type="button"
-                onClick={handleToggleConfirmPasswordVisibility}
-                className="absolute top-0 right-0 m-2 text-gray-500 focus:outline-none"
-              >
-                {showPassword ? 'Hide' : 'Show'}
-              </button>
+        <button
+          type="button"
+          onClick={handleToggleConfirmPasswordVisibility}
+          className="absolute top-0 right-0 m-1 sm:m-2 text-gray-500 focus:outline-none text-xs sm:text-base"
+        >
+          {showPassword ? 'Hide' : 'Show'}
+        </button>
       </div>
       <button
         type="submit"
-        className={`bg-green-600 py-3 text-white rounded-md w-full mt-5 hover:bg-green-700 transition duration-300 ${loading ? 'opacity-70 cursor-not-allowed' : ''}`}
+        className={`bg-green-600 py-1 sm:py-2 text-white rounded-md w-full mt-2 sm:mt-3 hover:bg-green-700 transition duration-300 ${
+          loading ? 'opacity-70 cursor-not-allowed' : ''
+        }`}
         disabled={loading}
       >
         {loading ? 'Signing Up...' : 'Sign Up'}
       </button>
-    
-        <p className="text-neutral-500 mt-5 text-center">
-          {props.showLoginLink && (
-            <>
-              Already have an account?{' '}
-              <span className="text-blue-800 ml-2 hover:underline cursor-pointer" onClick={props.toggleLoginPopUp}>
-                Login
-              </span>
-            </>
-          )}
-        </p>
-
+      <p className="text-neutral-500 mt-2 sm:mt-3 text-xs sm:text-sm">
+        {props.showLoginLink && (
+          <>
+            Already have an account?{' '}
+            <span className="text-blue-800 hover:underline cursor-pointer" onClick={props.toggleLoginPopUp}>
+              Login
+            </span>
+          </>
+        )}
+      </p>
     </form>
   </div>
 </div>
+
   );
 };
 
